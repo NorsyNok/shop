@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="boots.css">
+    <title>BOOTS</title>
+</head>
+<body>
+    <header>
+        <h2 class="headline" align="center">Cool boots for all hoots</h2>
+        <nav>
+            <ul class="list" align="center">
+                <li>
+                    <div class="box-1">
+                        <button onclick="showSection('MainPage')" class="btn-one">
+                            <span class="text" href="#mainpage">Главная страница</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="box-1">
+                        <button type="button" onclick="showSection('Сatalog')" class="btn-one">
+                            <span class="text" href="#catalog">Каталог</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="box-1">
+                        <button type="button" onclick="showSection('cart')" class="btn-one">
+                            <span class="text" id="cart-link" href="#cart">Корзина</span>
+                        </button>
+                    </div>
+                </li>
+                <li>
+                    <div class="box-1">
+                        <button type="button" onclick="showSection('About')" class="btn-one">
+                            <span class="text" href="#about">О нас</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="MainPage" class="section active">
+            <div class="bg">
+
+            </div>
+        </div>
+        <div id="Сatalog" class="section">
+            <h2 align="center">Уже практически ваша обувь!</h2>
+            <div class="product-list">
+                <article class="product">
+                    <img src="shoes1.jpg" alt="Timberland">
+                    <h3>Timberland</h3>
+                    <p>Нестареющая классика, которая будет по душе любому. В этих чибалетах ваши ножки будут и в уютном тепле, и в красивой обертке</p>
+                    <p>Цена: 12999 руб.</p>
+                    <div class="box-1">
+                        <button type="button" onclick="Take(0)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes2.jpg" alt="Adidas">
+                    <h3>Adidas</h3>
+                    <p>Знаменитые три полоски уже давно во всем мире означают стиль, спорт и, конечно же, русскую душу. Думать некогда, надо брать! </p>
+                    <p>Цена: 9999 руб.</p>
+                    <div class="box-1">
+                        <button type="button" onclick="Take(1)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes3.png" alt="Moschino">
+                    <h3>Moschino</h3>
+                    <p>Бренд всегда славился своим провокационным стилем, сочетающим элементы высокой моды и уличного шика. Стильно и дорого - moschino</p>
+                    <p>Цена: 23999 руб.</p>
+                    <div class="box-1">
+                        <button type="button" onclick="Take(2)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes4.jpg" alt="New Balance">
+                    <h3>New Balance</h3>
+                    <p>А когда не новый то ёмае! Лучший вариант для повседневного выхода в люди, в котором невероятное удобство гармонирует с выверенным стилем</p>
+                    <p>Цена: 16999 руб.</p>
+
+                    <div class="box-1">
+                        <button type="button" onclick="Take(3)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes5.png" alt="ASICS">
+                    <h3>ASICS</h3>
+                    <p>Любители спорта, а в частности бега, никогда бы не отказались от возможности приобрести себе такую обувь, всё дело в красивом удобстве!</p>
+                    <p>Цена: 11999 руб.</p>
+                    <div class="box-1">
+                        <button type="button" onclick="Take(4)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes6.png" alt="Saint Laurent">
+                    <h3>Saint Laurent</h3>
+                    <p>Неважно какое на вас будет платье, когда на ваших ногах такие шикарные туфли, от ваших ног невозможно будет отвести глаз, это уж точно</p>
+                    <p>Цена: 42999 руб.</p>
+                    <div class="box-1">
+                        <button type="button" onclick="Take(5)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes7.jpg" alt="Prada">
+                    <h3>Prada</h3>
+                    <p>Дьявол носит Prada, и мы его не осуждаем, сложно отказаться от такого адского искушения и хотя бы раз обличиться в красный искусный бренд</p>
+                    <p>Цена: 66666 руб.</p>
+
+                    <div class="box-1">
+                        <button type="button" onclick="Take(6)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="shoes8.png" alt="Balenciaga">
+                    <h3>Balenciaga</h3>
+                    <p>Ракать баленсу можно только истинным любителям моды, далеко не все поймут её, но одно все знают точно: Balenciaga - это что-то на богатом</p>
+                    <p>Цена: 99999 руб.</p>
+
+                    <div class="box-1">
+                        <button type="button" onclick="Take(7)" class="btn-two">
+                            <span class="text" href="#about">Беру!</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div id="About" class="section">
+            <h2 align="center">Немного о нашей комании:</h2>
+            <p align="center">Наша компания уже несколько лет занимается продажей обуви по всему земному шару! Среди наших постоянных клиентов вы можете увидеть: Райана Гослинга, Филиппа Киркорова, Кирина Никиту и других знаменитостей. В нашем магазине вы также можете обнаружить эксклюзивы от многих знаменитых домов мод, которые можно встретить только на наших прилавках. Надеемся, что вы найдете у нас обувь по душе и размеру!</p>
+        </div>
+        <div id="cart" class="section">
+            <h2 align="center">Ваша корзинка</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Итого</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Общая сумма:</td>
+                        <td id="total"></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+    <script src="Boots.js"></script>
+    <footer>
+        <div align="center">Все права защищены Kirek&Co</div>
+    </footer>
+</body>
+</html>
